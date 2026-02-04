@@ -180,10 +180,24 @@
 <div class="cta">
   <h2>Book a Cyber Safety Session</h2>
   <p>Sessions are flexible and adapted to the age and experience of participants.</p>
-  <a href="mailto:cybersafetyclasses@gmail.com?subject=Cyber%20Safety%20Class%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20your%20cyber%20safety%20classes.%0A%0AThank%20you." 
-   class="cta-button">
-  Request Information
-</a>
+  <a href="#" id="emailButton" class="cta-button">Request Information</a>
+
+<script>
+  const button = document.getElementById('emailButton');
+
+  button.addEventListener('click', () => {
+    const gmailURL = "https://mail.google.com/mail/?view=cm&fs=1&to=cybersafetyclasses@gmail.com&su=Cyber%20Safety%20Class%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20your%20cyber%20safety%20classes.%0A%0AThank%20you.";
+    const mailtoURL = "mailto:cybersafetyclasses@gmail.com?subject=Cyber%20Safety%20Class%20Request&body=Hello,%0A%0AI%20would%20like%20more%20information%20about%20your%20cyber%20safety%20classes.%0A%0AThank%20you.";
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = mailtoURL;
+    } else {
+      window.open(gmailURL, "_blank");
+    }
+  });
+</script>
 
 <style>
 .cta-button {
@@ -195,6 +209,7 @@
   padding: 0.9rem 1.6rem;
   border-radius: 999px;
   transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
 }
 
 .cta-button:hover {
@@ -213,6 +228,7 @@
 
 </body>
 </html>
+
 
 
 
