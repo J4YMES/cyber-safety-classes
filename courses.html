@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses – Cyber Safety Tutors</title>
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --secondary: #1f6feb;
+      --accent: #00c2a8;
+      --bg: #f8fafc;
+      --text: #1f2933;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.75rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Courses & Services</h1>
+  <p>Flexible options to match different needs and experience levels</p>
+</header>
+
+<main>
+  <div class="grid">
+    <div class="card">
+      <h2>Free Demo PDF</h2>
+      <p>
+        A beginner-friendly guide covering common scams, password safety,
+        and everyday online risks.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Monthly Tech Help Subscription</h2>
+      <p>
+        Ongoing support for questions, device issues, account security,
+        and safe online habits.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Online or In-Person Safety Classes</h2>
+      <p>
+        Structured sessions tailored for parents, seniors, or small groups,
+        available online or face-to-face.
+      </p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+</main>
+
+</body>
+</html>
